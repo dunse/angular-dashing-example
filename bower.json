@@ -1,0 +1,30 @@
+{
+  "name": "angular-dashing-example",
+  "version": "0.0.0",
+  "authors": [
+    "Pehr Johansson <pehr.l.johansson@gmail.com>"
+  ],
+  "description": "Demo of how to create dashing style widgets in AngularJS",
+  "main": "demo.js",
+  "keywords": [
+    "angular",
+    "angularjs",
+    "dashing",
+    "widget",
+    "example"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.2.x",
+    "jquery-knob": "*",
+    "angular-gridster": "*",
+    "font-awesome": "~4.1.0"
+  }
+}

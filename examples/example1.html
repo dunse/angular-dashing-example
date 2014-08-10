@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+<head>
+  <title>Angular.js Gridster Style Widgets Demo</title>
+  <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="../bower_components/jquery-knob/dist/jquery.knob.min.js"></script>
+  <script src="../bower_components/angular/angular.min.js"></script>
+  <script src="../bower_components/javascript-detect-element-resize/jquery.resize.js"></script>
+  <script src="../bower_components/angular-gridster/src/angular-gridster.js"></script>
+  <script src="../src/directives/adDirectives.js"></script>
+
+  <link rel="stylesheet" href="../bower_components/angular-gridster/dist/angular-gridster.min.css"/>
+  <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../src/css/app.css">
+  <script>
+    var app = angular.module("adDemo", ['adDirectives']);
+
+    function ExampleCtrl($scope, $interval) {
+      $interval(function () {
+        $scope.arcfill1 = Math.random() * 100;
+        $scope.arcfill2 = Math.random() * 100;
+        $scope.numberfill1 = Math.floor(Math.random() * 500);
+        $scope.numberfill2 = Math.floor(Math.random() * 500);
+      }, 2000);
+    }
+  </script>
+
+</head>
+<body ng-app='adDemo'>
+
+<div ng-controller="ExampleCtrl">
+
+
+  <div gridster >
+    <ul>
+
+      <ad-arc value="arcfill1" min="0" max="100" title="First Title"></ad-arc>
+      <ad-number value="numberfill1" title="Second Title"></ad-number>
+
+      <ad-arc value="arcfill2" min="0" max="200" title="Third Title"></ad-arc>
+      <ad-number value="numberfill2" title="Forth Title"></ad-number>
+
+    </ul>
+  </div>
+
+
+</div>
+
+</body>
+</html>

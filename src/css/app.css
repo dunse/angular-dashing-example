@@ -1,0 +1,36 @@
+/* Widgets */
+.widget {
+    padding: 25px 12px;
+    text-align: center;
+    width: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    color: #dddddd;
+    font-family: sans-serif;
+}
+.ad-arc {
+    background-color: #CC5BD9;
+}
+
+.ad-number {
+    background-color: #509EDE;;
+}
+.per-cent::after {
+    content: '%'
+}
+.title {
+    font-size: 40px;
+}
+
+.widget h1 {
+    margin-top: 10px;
+}
+
+.widget h2 {
+    font-size: 32px;
+    color: white;
+}
+
+.widget i, .widget span {
+    color: white;
+}
